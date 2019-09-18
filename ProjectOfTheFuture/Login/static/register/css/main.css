@@ -71,7 +71,7 @@ body {
   color: #5dc8e5;
 }
 .footer{
-	position: fixed;
+	/* position: fixed; */
 	bottom: 1%;
   left: 0;
   width: 100%;
