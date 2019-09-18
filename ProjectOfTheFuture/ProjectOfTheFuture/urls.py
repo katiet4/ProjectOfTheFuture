@@ -24,6 +24,7 @@ urlpatterns = [
     path('login/', include("Login.urls")),
     path('AboutProject/', include("AboutProject.urls")),
     path('AboutUs/', include("AboutUs.urls")),
+    path('Register/', include("Register.urls")),
     path('License/', include("License.urls"))
 
 ]

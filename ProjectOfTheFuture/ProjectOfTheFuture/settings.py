@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'Login',
+    'Register',
     'AboutProject',
     'AboutUs',
     'License',
