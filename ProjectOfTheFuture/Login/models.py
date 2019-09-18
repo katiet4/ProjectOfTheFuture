@@ -8,6 +8,9 @@ class Users(models.Model):
 
 	Sex       = models.CharField(max_length=1)
 
+	password   = models.TextField()
+	email   = models.TextField()
+
 	bYear     = models.IntegerField()
 	bMonth    = models.IntegerField()
 	bDay      = models.IntegerField()
