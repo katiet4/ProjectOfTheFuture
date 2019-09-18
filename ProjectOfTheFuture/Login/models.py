@@ -6,6 +6,9 @@ class Users(models.Model):
 	LastName  = models.CharField(max_length=50)
 	NickName  = models.CharField(max_length=50)
 
+	email     = models.TextField()
+	password  = models.TextField()
+
 	Sex       = models.CharField(max_length=1)
 
 	bYear     = models.IntegerField()
