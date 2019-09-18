@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Login</title>
 	{% load staticfiles %}
-	<link rel = "stylesheet" href = "{% static 'css/main.css' %}">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<script type="text/javascript" src="{% static 'register/js/main.js'%}"></script>
 </head>
+
 <body>
-	<div class = "page_header_bk"></div>
-	<div id = "FormLogin">
+	<div class="page_header_bk"></div>
+	<div id="FormLogin">
 		<form method="POST" action="#">
-			<input class = "LoginForm" id = 'email' type = "text" placeholder = "Email" name = 'index_email' autocomplete = "off">
-			<input class = "LoginForm" id = '' type = "text" placeholder = "NickName" name = 'NickName' autocomplete = "off">
-			<input class = "LoginForm" id = 'pass' type = "password" placeholder = "Pass" name = 'index_pass' autocomplete = "off">
-			<input class = "LoginForm" id = '' type = "text" placeholder = "FirstName" name = 'FirstName' autocomplete = "off">
-			<input class = "LoginForm" id = '' type = "text" placeholder = "LastName" name = 'LastName' autocomplete = "off">
+			<input class="LoginForm" id='email' type="text" placeholder="Email" name='index_email' autocomplete="off">
+			<input class="LoginForm" id='' type="text" placeholder="NickName" name='NickName' autocomplete="off">
+			<input class="LoginForm" id='pass' type="password" placeholder="Pass" name='index_pass' autocomplete="off">
+			<input class="LoginForm" id='' type="text" placeholder="FirstName" name='FirstName' autocomplete="off">
+			<input class="LoginForm" id='' type="text" placeholder="LastName" name='LastName' autocomplete="off">
 			<p><b>Пол:</b><Br>
 				<input type="radio" name="sex" value="Male"> Male<Br>
 				<input type="radio" name="sex" value="FeMale"> FeMale<Br>
-			   </p>
-			<input class = "LoginForm" id = 'index_post' type = "submit" value = "Login" name = 'postLogin'>
+			</p>
+			<input class="LoginForm" id='index_post' type="submit" value="Login" name='postLogin'>
+			<div id="main" align="center">
+				<div id="loyat">
+					<form>
+						<div id="birth_day">
+							<select id="day1" onclick="">
+								<script type="text/javascript"> day(); </script>
+							</select>
+							<select id="month1">
+								<script type="text/javascript">month(); </script>
+							</select>
+							<select id="year1" onclick="">
+								<script type="text/javascript"> year(); </script>
+							</select>
+						</div>
+					</form>
+				</div>
+			</div>
 			{% csrf_token %}
 		</form>
 	</div>
-	<footer class = 'footer'>
-		<div class = 'footer_line'>
-			<nav class = 'menu'>
-             <a class = 'footer_menu' href = '/AboutProject/'>О проекте</a>
-			 <a class = 'footer_menu' href = '/AboutUs/'>О нас</a>
-			 <a class = 'footer_menu' href = '/License/'>Лицензия</a>
-			 <a class = 'footer_menu' href = '#'>Ну и там что-нибудь ещё</a>
+	<footer class='footer'>
+		<div class='footer_line'>
+			<nav class='menu'>
+				<a class='footer_menu' href='/AboutProject/'>О проекте</a>
+				<a class='footer_menu' href='/AboutUs/'>О нас</a>
+				<a class='footer_menu' href='/License/'>Лицензия</a>
+				<a class='footer_menu' href='#'>Ну и там что-нибудь ещё</a>
 			</nav>
 		</div>
 	</footer>
 </body>
+
 </html>
