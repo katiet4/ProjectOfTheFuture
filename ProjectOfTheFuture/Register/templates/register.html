@@ -21,24 +21,18 @@
 				<input type="radio" name="sex" value="Male"> Male<Br>
 				<input type="radio" name="sex" value="FeMale"> FeMale<Br>
 			</p>
-			<input class="LoginForm" id='index_post' type="submit" value="Login" name='postLogin'>
-			<div id="main" align="center">
-				<div id="loyat">
-					<form>
-						<div id="birth_day">
-							<select id="day1" onclick="">
-								<script type="text/javascript"> day(); </script>
-							</select>
-							<select id="month1">
-								<script type="text/javascript">month(); </script>
-							</select>
-							<select id="year1" onclick="">
-								<script type="text/javascript"> year(); </script>
-							</select>
-						</div>
-					</form>
-				</div>
+			<div id="birth_day">
+				<select id="day1" onclick="">
+					<script type="text/javascript"> day(); </script>
+				</select>
+				<select id="month1">
+					<script type="text/javascript">month(); </script>
+				</select>
+				<select id="year1" onclick="">
+					<script type="text/javascript"> year(); </script>
+				</select>
 			</div>
+			<input class="LoginForm" id='index_post' type="submit" value="Login" name='postLogin'>
 			{% csrf_token %}
 		</form>
 	</div>
