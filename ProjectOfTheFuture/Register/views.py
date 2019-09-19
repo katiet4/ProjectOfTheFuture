@@ -11,11 +11,13 @@ def register(request):
 		BDay = request.POST.get('day')
 		BMonth = request.POST.get('month')
 		BYear = request.POST.get('year')
+		if Users.objects.filter(NickName = nick).exists():
+			return render(request, 'register.html', {'Answer':'Error'})
 		user = Users(FirstName = Fname, LastName = Lname, NickName = nick, 
 						email = email, password = password, Sex = 'M' if sex == 'Male' else "F",
 						bYear = BYear, bMonth = BMonth, bDay = BDay)
 		user.save()
-
+		return render(request, 'register.html', {'Answer':'Successful'})
 		# print(email)
 		# print(password)
 		# print(nick)
