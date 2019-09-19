@@ -4,7 +4,7 @@
 <head>
 	<title>Login</title>
 	{% load staticfiles %}
-	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<link rel="stylesheet" href="{% static '/register/css/main.css' %}">
 	<script type="text/javascript" src="{% static 'register/js/main.js'%}"></script>
 </head>
 <body>
@@ -18,7 +18,7 @@
 			<input class="LoginForm" id='' type="text" placeholder="LastName" name='LastName' autocomplete="off">
 			<input class="LoginForm" id='index_post' type="submit" value="Login" name='postLogin'>
 			<p><b>Пол:</b><Br>
-				<input type="radio" name="sex" value="Male"> Male<Br>
+				<input type="radio" name="sex" value="Male" checked	= '1'> Male<Br>
 				<input type="radio" name="sex" value="FeMale"> FeMale<Br>
 			</p>
 			<div id="birth_day">
@@ -36,7 +36,7 @@
 			{% csrf_token %}
 		</form>
 	</div>
-<!-- 	<footer class='footer'>
+	<footer class='footer'>
 		<div class='footer_line'>
 			<nav class='menu'>
 				<a class='footer_menu' href='/AboutProject/'>О проекте</a>
@@ -45,7 +45,7 @@
 				<a class='footer_menu' href='#'>Ну и там что-нибудь ещё</a>
 			</nav>
 		</div>
-	</footer> -->
+	</footer>
 </body>
 
 </html>
