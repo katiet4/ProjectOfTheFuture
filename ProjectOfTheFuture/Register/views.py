@@ -11,7 +11,7 @@ def register(request):
 		BDay = request.POST.get('day')
 		BMonth = request.POST.get('month')
 		BYear = request.POST.get('year')
-		if Users.objects.filter(NickName = nick).exists():
+		if Users.objects.filter(NickName = nick).exists() or Users.objects.filter(email = email).exists():
 			return render(request, 'register.html', {'Answer':'Error'})
 		user = Users(FirstName = Fname, LastName = Lname, NickName = nick, 
 						email = email, password = password, Sex = 'M' if sex == 'Male' else "F",
