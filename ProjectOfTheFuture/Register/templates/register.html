@@ -17,13 +17,13 @@
 			<input class="LoginForm" id='' type="text" placeholder="FirstName" name='FirstName' autocomplete="off">
 			<input class="LoginForm" id='' type="text" placeholder="LastName" name='LastName' autocomplete="off">
 			<input class="LoginForm" id='index_post' type="submit" value="Login" name='postLogin'>
-			<p><b>Пол:</b><Br>
+			<p><b>{{Answer}}Пол:</b><Br>
 				<input type="radio" name="sex" value="Male" checked	= '1'> Male<Br>
 				<input type="radio" name="sex" value="FeMale"> FeMale<Br>
 			</p>
 			<div id="birth_day">
-				<select id="day1" name="day" onclick="">
-					<script type="text/javascript"> day(); </script>
+				<select id="day1" name="day" onclick="day()">
+					<!-- <script type="text/javascript"> day(); </script> -->
 				</select>
 				<select id="month1" name="month">
 					<script type="text/javascript">month(); </script>
