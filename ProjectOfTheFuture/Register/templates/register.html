@@ -4,48 +4,45 @@
 <head>
 	<title>Login</title>
 	{% load staticfiles %}
-	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<link rel="stylesheet" href="{% static '/register/css/main.css' %}">
 	<script type="text/javascript" src="{% static 'register/js/main.js'%}"></script>
 </head>
+
 <body>
-	<div class="page_header_bk"></div>
+	<div class="page_header_bk">
+		<div class="page_header_bk_link">
+			<a href="">Log in</a>
+
+			<a href="">Register</a>
+		</div>
+	</div>
 	<div id="FormLogin">
-		<form method="POST" action="#">
+		<form method="POST" action="">
 			<input class="LoginForm" id='email' type="text" placeholder="Email" name='index_email' autocomplete="off">
 			<input class="LoginForm" id='' type="text" placeholder="NickName" name='NickName' autocomplete="off">
 			<input class="LoginForm" id='pass' type="password" placeholder="Pass" name='index_pass' autocomplete="off">
 			<input class="LoginForm" id='' type="text" placeholder="FirstName" name='FirstName' autocomplete="off">
 			<input class="LoginForm" id='' type="text" placeholder="LastName" name='LastName' autocomplete="off">
-			<input class="LoginForm" id='index_post' type="submit" value="Login" name='postLogin'>
-			<p><b>Пол:</b><Br>
-				<input type="radio" name="sex" value="Male"> Male<Br>
-				<input type="radio" name="sex" value="FeMale"> FeMale<Br>
+			<p class='set_sex'><b></b>Пол:</b>
+				<input type="radio" name="sex" value="Male" checked='1'> Male
+				<input type="radio" name="sex" value="FeMale"> FeMale
 			</p>
-			<div id="birth_day">
-				<select id="day1" name="day" onclick="">
-					<script type="text/javascript"> day(); </script>
+			<div class='' style='margin-top: 10px;' id="birth_day">
+				<select id="day1" name="day">
+					<script type="text/javascript">day(); </script>
 				</select>
 				<select id="month1" name="month">
 					<script type="text/javascript">month(); </script>
 				</select>
-				<select id="year1" name="year" onclick="">
+				<select id="year1" name="year">
 					<script type="text/javascript"> year(); </script>
 				</select>
-			</div>
-			
-			{% csrf_token %}
+				<input class="LoginForm" id='index_post' style="margin-top: 10px;" type="submit" value="Login"
+					name='postLogin'>
+
+				{% csrf_token %}
 		</form>
 	</div>
-<!-- 	<footer class='footer'>
-		<div class='footer_line'>
-			<nav class='menu'>
-				<a class='footer_menu' href='/AboutProject/'>О проекте</a>
-				<a class='footer_menu' href='/AboutUs/'>О нас</a>
-				<a class='footer_menu' href='/License/'>Лицензия</a>
-				<a class='footer_menu' href='#'>Ну и там что-нибудь ещё</a>
-			</nav>
-		</div>
-	</footer> -->
 </body>
 
 </html>

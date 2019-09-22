@@ -1,9 +1,12 @@
 body {
+  margin: 0;
   background: rgb(52, 56, 61);
 }
 #FormLogin {
-  margin-left: 35%;
-  margin-top: 20%;
+  margin: 0 auto;
+  padding-top: 25%;
+  width: 30%;
+  margin-bottom: 25%
 }
 .page_header_bk {
   position: fixed;
@@ -25,7 +28,6 @@ body {
   font-size: 20px;
   height: 40px;
   border-radius: 4px;
-  width: 40%;
   background: #373e4a;
   border: 1px solid #373e4a;
   margin-bottom: 15px;
@@ -51,11 +53,10 @@ body {
 }
 #index_post {
   text-shadow: none;
-  position: fixed;
   color: #27e3e3;
   border-radius: 20px;
-  width: 10%;
-  margin-left: 8%;
+  width: 250px;
+  margin: 0 auto;
   padding-bottom: 30px;
   height: 30px;
   font-size: 20px;
@@ -70,36 +71,18 @@ body {
   text-shadow: #5dc8e5 0 0 10px;
   color: #5dc8e5;
 }
-.footer{
-	/* position: fixed; */
-	bottom: 1%;
-  left: 0;
-  width: 100%;
-  height: 30px;
-  
+.set_sex{
+  border: 0;
+  margin: 0px;
+  font-size: 20px;
+  color: gray;
 }
-.footer_line{
-	margin-left: 10%;
-	width: 80%;
-	border-top: 1px solid #f0f0f0;
-	box-shadow: 0 2px 20px #f0f0f0;
-	height: 1px;
+.page_header_bk_link{
+  align-content: center;
+  margin: 0 auto;
+  width: 20%;
 }
-.footer_menu{
-	color: #5dc8e5;
-	display: inline-block;
-	margin-left: 20%;
-	margin-top: 10px;
-  size: 20px;
+.page_header_bk_link a{
   text-decoration: none;
-}
-.index_sex{
-margin: 0 0 10px 1px;
-  color: #939393;
-
-}
-.set_set{
-  float: left;
-  margin-bottom: 15px;
-  padding-right: 30px;
+  color: white;
 }
