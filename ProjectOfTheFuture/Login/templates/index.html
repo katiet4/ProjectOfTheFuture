@@ -10,6 +10,7 @@
 	<div id = "FormLogin">
 		<form method="POST" action="">
 			<input class = "LoginForm" id = 'index_email' type = "text" placeholder = "Nick" name = 'email' autocomplete = "off">
+			{{Answer}}
 			<input class = "LoginForm" id = 'index_pass' type = "password" placeholder = "Пароль" name = 'pass' autocomplete = "off">
 			<input class = "LoginForm" id = 'index_post' type = "submit" value = "Login" name = 'postLogin'>
 			{% csrf_token %}
