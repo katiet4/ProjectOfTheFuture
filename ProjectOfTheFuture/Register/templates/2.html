@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static '/register/css/main.css' %}">
+	<script type="text/javascript" src="{% static 'register/js/main.js'%}"></script>
+</head>
+
+<body>
+	<div class="page_header_bk">
+		<div class="page_header_bk_link">
+			<a href="/login/">Log in</a>
+
+			<a href="/register/">Register</a>
+		</div>
+	</div>
+	<div id="FormLogin">
+		<form method="POST" action="">
+			<p>
+			<input class="LoginForm" id='email' type="text" placeholder="Email" name='index_email' autocomplete="off">
+			<span id = 'valid'></span>
+			</p>
+			<input class="LoginForm" id='' type="text" placeholder="NickName" name='NickName' autocomplete="off">
+			<input class="LoginForm" id='pass' type="password" placeholder="Pass" name='index_pass' autocomplete="off">
+			<input class="LoginForm" id='' type="text" placeholder="FirstName" name='FirstName' autocomplete="off">
+			<input class="LoginForm" id='' type="text" placeholder="LastName" name='LastName' autocomplete="off">
+<<<<<<< HEAD
+			<input class="LoginForm" id='index_post' type="submit" value="Login" name='postLogin'>
+			<p><b>{{Answer}}Пол:</b><Br>
+				<input type="radio" name="sex" value="Male" checked	= '1'> Male<Br>
+				<input type="radio" name="sex" value="FeMale"> FeMale<Br>
+			</p>
+			<div id="birth_day">
+				<select id="day1" name="day" onclick="day()">
+					<!-- <script type="text/javascript"> day(); </script> -->
+=======
+			<p class='set_sex'><b></b>Пол:</b>
+				<input type="radio" name="sex" value="Male" checked='1'> Male
+				<input type="radio" name="sex" value="FeMale"> FeMale
+			</p>
+			<div class='' style='margin-top: 10px;' id="birth_day">
+				<select id="day1" name="day">
+					<script type="text/javascript">day(); </script>
+>>>>>>> macwel
+				</select>
+				<select id="month1" name="month">
+					<script type="text/javascript">month(); </script>
+				</select>
+				<select id="year1" name="year">
+					<script type="text/javascript"> year(); </script>
+				</select>
+				<input class="LoginForm" id='index_post' style="margin-top: 10px;" type="submit" value="Login"
+					name='postLogin'>
+
+				{% csrf_token %}
+		</form>
+	</div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+	<footer class='footer'>
+		<div class='footer_line'>
+			<nav class='menu'>
+				<a class='footer_menu' href='/AboutProject/'>О проекте</a>
+				<a class='footer_menu' href='/AboutUs/'>О нас</a>
+				<a class='footer_menu' href='/License/'>Лицензия</a>
+				<a class='footer_menu' href='#'>Ну и там что-нибудь ещё</a>
+			</nav>
+		</div>
+	</footer>
+=======
+>>>>>>> macwel
+=======
+	<script>
+valid = document.querySelector('#valid');
+email = document.querySelector("#email");
+
+email.onblur = (function() {
+  if (!email.value.includes('@')) {
+    email.classList.add('valid');
+    valid.innerHTML = 'Пожалуйста, введите правильный email.';
+  }
+});
+
+email.onfocus = function() {
+  if (this.classList.contains('valid')) {
+    this.classList.remove('valid');
+    valid.innerHTML = "";
+  }
+};
+</script>
+>>>>>>> macwel
+</body>
+
+</html> -->
