@@ -22,9 +22,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', RedirectView.as_view(url='login/')),
     path('login/', include("Login.urls")),
-    path('AboutProject/', include("AboutProject.urls")),
-    path('AboutUs/', include("AboutUs.urls")),
-    path('Register/', include("Register.urls")),
-    path('License/', include("License.urls"))
+    path('aboutProject/', include("AboutProject.urls")),
+    path('aboutUs/', include("AboutUs.urls")),
+    path('register/', include("Register.urls")),
+    path('license/', include("License.urls"))
 
 ]
