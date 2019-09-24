@@ -9,6 +9,7 @@ def LoginDef(request):
 		if Users.objects.get(email = email).password == password:
 			request.session['Aunt'] = "TrueAunt"
 			#переход на страницу
-		
+		else: 
+			return render(request, 'index.html', {'Answer':'Error'})
 
 	return render(request, "index.html")
