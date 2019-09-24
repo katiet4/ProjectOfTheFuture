@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Login</title>
-	{% load staticfiles %}
-	<link rel = "stylesheet" href = "{% static '/login/css/main.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static '/login/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/themify-icons.css' %}">
 </head>
+
 <body>
-	<div class = "page_header_bk"></div>
-	<div id = "FormLogin">
-		<form method="POST" action="">
-			<input class = "LoginForm" id = 'index_email' type = "text" placeholder = "Nick" name = 'email' autocomplete = "off">
-			<input class = "LoginForm" id = 'index_pass' type = "password" placeholder = "Пароль" name = 'pass' autocomplete = "off">
-			<input class = "LoginForm" id = 'index_post' type = "submit" value = "Login" name = 'postLogin'>
-			{% csrf_token %}
-		</form>
-	</div>
-	<footer class = 'footer'>
-		<div class = 'footer_line'>
-			<nav class = 'menu'>
-             <a class = 'footer_menu' href = '/AboutProject/'>О проекте</a>
-			 <a class = 'footer_menu' href = '/AboutUs/'>О нас</a>
-			 <a class = 'footer_menu' href = '/License/'>Лицензия</a>
-			 <a class = 'footer_menu' href = '#'>Ну и там что-нибудь ещё</a>
-			</nav>
-		</div>
-	</footer>
+    <div id='left_panel'>
+        <div class='left_panel_link'>
+            <a href="/login/" class="ti-home" style='background: none;'></a>
+            <a href="/register/" class="ti-settings" style='background: none;'></a>
+        </div>
+    </div>
+    <div class='center_menu'>
+        <p style='background: none;'>Login</p>
+        <form method='Post' action="">
+            <div class='center_menu_input'>
+                <input class="LoginForm" id='' type="text" placeholder="Username" name='NickName' autocomplete="off">
+                <input class="LoginForm" id='' type="password" placeholder="Password" name='index_pass' autocomplete="off">
+                <input class="LoginForm" id='index_post' style="margin-top: 10px;" type="submit" value="Login" name='postLogin'>
+        </form>
+    </div>
+    </div>
+    {% csrf_token %}
 </body>
+
 </html>
