@@ -27,7 +27,8 @@ left: -250px;
   font-size: 0%;
   text-decoration: none;
 }
-#index_psot{
+#index_post{
+  border: red;
   background: red;
 }
 .center_menu{
