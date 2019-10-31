@@ -1,0 +1,108 @@
+
+.input{
+	padding-left: 5px;
+	width: 40%;
+	height: 40px;
+	background: rgba(21, 23, 25,.8);
+	border: 0px solid white;
+	border-radius: 10px;
+	font-size: 20px;
+	color:rgba(0,0,0,.9);
+}
+.input:focus{
+	color:#E0FFFF;
+	outline: none;
+}
+.buttonR{
+	border-radius: 20px;
+	width: 15%;
+	height: 30px;
+	font-size: 20px;
+	background: rgba(21, 23, 25,.8);
+	border: 0px solid white;
+	color: black;
+}
+.buttonR:focus{
+  outline: none;
+}
+.buttonR:hover{
+  text-shadow: #5dc8e5 0 0 10px;
+  color:#5dc8e5;
+}
+#between{
+	width: 20%;
+	margin-top: -1%;
+}
+#FormRegister{
+	margin-left: 35%;
+	margin-top:20%;
+}
+.Mtop{
+	margin-top: .5%;
+}
+.Mtop2{
+	margin-top: 3%;
+}
+.text{
+	
+	color:#858585;
+}
+.select{
+	background: rgba(21, 23, 25,.8);
+	border-color: rgba(21, 23, 25,.8);
+	font-size: 26px;
+	color:#858585;
+	border-radius: 10px;
+}
+.inputRadio{
+	width: 15px;
+	height: 15px;
+	background-color: blue;
+	background: blue;
+}
+#Sex{
+	padding-top: 1%;
+	padding-left: .5%;
+	margin-top: .5%;
+	border-radius: 10px;
+	width: 40.1%;
+	height: 35px;
+	background-color: rgba(21, 23, 25,.8);
+}
+#Sex label{
+	color: #858585;
+	font-size: 20px;
+}
+#log{
+	margin-left: 12%;
+	margin-top: .5%;
+}
+
+#answer{
+	font-size: 20px;
+}
+
+
+
+
+
+.form_radio_btn {
+	display: inline-block;
+	margin-right: 10px;
+}
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 1px;
+	border: 1px solid #6b6b6b;
+	border-radius: 6px;
+	user-select: none;
+}
+ 
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+	background:black;
+}

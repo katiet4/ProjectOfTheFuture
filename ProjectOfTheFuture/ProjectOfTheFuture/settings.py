@@ -25,13 +25,15 @@ SECRET_KEY = 'lv2&2*t7csl@!840su*wzar8p)wrr_g6#q%=c6msaq0l3(5ko='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["192.168.0.11"]
 
 
 # Application definition
 
 
 INSTALLED_APPS = [
+    'MyPage',
+    'Exit',
     'Login',
     'Register',
     'AboutProject',
@@ -122,7 +124,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")
+    os.path.join(BASE_DIR, "static"),
+    "/static/"
 ]
 
 # Static files (CSS, JavaScript, Images)

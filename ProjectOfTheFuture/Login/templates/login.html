@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{%block title%}
+<title>Login</title>
+{%endblock%}
+
+{%block links%}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'login/css/style.css' %}">
+<script type="text/javascript" src="{% static 'login/js/validate.js' %}"></script>
+{%endblock%}
+
+{%block header%}
+    <a href="/login">Login</a>
+    <a href="/registration">Registration</a>
+{%endblock%}
+
+{%block content%}
+
+<div id = "FormLogin">
+		<form  name="contact_form" method="POST" action="" onsubmit="return validate_form();">
+			<p id = "answer" style="margin-left: {{proc}}%;color: {{color}}">{{Answer}}</p><br>
+			<input type="text" name="email" placeholder="Email" class = "input" border="0" autocomplete="off"><br/>
+			<input id= 'pass' type="password" name="password" placeholder="Password" class = "input Mtop" autocomplete="off"><br/>
+			<input id = "log" type="submit" name="login" value="Login" class = "button"><br/>
+			<p id ='ForgetPass'>forgot your password? <a href="#" id='ClickHere'>click here</a></p>
+			{% csrf_token %}
+		</form>
+	</div>
+{%endblock%}

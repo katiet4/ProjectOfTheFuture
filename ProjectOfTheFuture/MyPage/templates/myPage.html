@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+
+{%block title%}
+<title>My page</title>
+{%endblock%}
+
+{%block links%}
+
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'mypage/css/style.css' %}">
+{%endblock%}
+
+{%block header%}
+    <a href="/exit">Exit</a>
+    <a href="/loadImage">Load background image</a>
+{%endblock%}
+
+{%block content%}
+    {% load staticfiles %}
+    <div id = "body" style="background-image:url({% static 'UsersImages/{{style}}' %}) ">
+        <p>First name: {{FirstName}}</p>
+        <p>Last name: {{LastName}}</p>
+        <p>Nick name: {{NickName}}</p>
+        <p>Email: {{email}}</p>
+        <p>Sex: {{Sex}}</p>
+        <p>Birthday: {{bMonth}}-{{bDay}}-{{bYear}}</p>
+    </div>
+{%endblock%}

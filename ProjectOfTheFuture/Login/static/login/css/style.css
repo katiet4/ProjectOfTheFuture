@@ -1,0 +1,71 @@
+#answer{
+
+color: white;
+	font-size: 20px;
+}
+.input{
+	padding-left: 5px;
+	width: 40%;
+	height: 40px;
+	background: rgba(21, 23, 25,.8);
+	border: 0px solid white;
+	border-radius: 10px;
+	font-size: 20px;
+	color:rgba(0,0,0,.9);
+}
+.input:focus{
+	color:#E0FFFF;
+	outline: none;
+}
+.button{
+	border-radius: 20px;
+	width: 9%;
+	height: 30px;
+	font-size: 20px;
+	background: rgba(21, 23, 25,.8);
+	border: 0px solid white;
+	color: black;
+}
+.button:focus{
+  outline: none;
+}
+.button:hover{
+  text-shadow: #5dc8e5 0 0 10px;
+  color:#5dc8e5;
+}
+#between{
+	width: 20%;
+	margin-top: -1%;
+}
+#FormLogin{
+	margin-left: 35%;
+	margin-top:20%;
+}
+
+.Mtop{
+	margin-top: .5%;
+}
+#log{
+	margin-left: 15%;
+	margin-top: .5%;
+}
+#ForgetPass{
+	margin-left: 7%;
+	color:#708090 ;
+}
+#ClickHere{
+	color:#FFF0F5 ;
+	text-decoration: none;
+}
+#ClickHere:link{
+	color:#FFF0F5 ;
+}
+#ClickHere:visited{
+	color:#FFF0F5 ;
+}
+#ClickHere:active{
+	color:#FFF0F5 ;
+}
+#ClickHere:hover{
+	color:#FFF0F5 ;
+}
